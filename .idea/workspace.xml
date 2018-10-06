@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5390e1e-24e6-4444-bd62-e92bc62373d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Alto_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Alto_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Arrow_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Arrow_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Destination.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Destination.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Destination_big.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Destination_big.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Driver_photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Driver_photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Edit_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Edit_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Info_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Info_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kabob_nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Kabob_nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Map_detail.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Map_detail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Map_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Map_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Map_overview.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Map_overview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Profile_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Profile_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vehicle_photo.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Vehicle_photo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Vibes_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/Vibes_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HomeView.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MainContentContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainContentContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,21 +46,27 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="js" value="16" />
+          <entry key="json" value="1" />
+          <entry key="otf" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="JSON" value="1" />
           <entry key="JavaScript" value="16" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="1100" />
+          <entry key="js" value="1242" />
+          <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="1100" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="1242" />
         </counts>
       </usages-collector>
     </session>
@@ -62,14 +85,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/HomeView.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+            <state relative-caret-position="476">
+              <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="81" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -99,6 +131,7 @@
         <option value="$PROJECT_DIR$/components/TripInfo.js" />
         <option value="$PROJECT_DIR$/components/MainContentContainer.js" />
         <option value="$PROJECT_DIR$/components/HomeView.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -148,11 +181,6 @@
               <item name="alto" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="alto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="alto" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -168,6 +196,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Downloads\misc\radish\guide\alto\assets\images" />
+      <recent name="D:\Downloads\misc\radish\guide\alto\assets\fonts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,12 +226,12 @@
       <option name="presentableId" value="Default" />
       <updated>1538708692241</updated>
       <workItem from="1538708700823" duration="2515000" />
-      <workItem from="1538794929988" duration="10841000" />
+      <workItem from="1538794929988" duration="13455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13356000" />
+    <option name="totallyTimeSpent" value="15970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -217,7 +251,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.20141844" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29078013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -326,13 +360,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/fonts/Linotype - OptimaLTStd.otf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/components/HomeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="476">
+          <caret line="28" column="40" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="81" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="83" />
         </state>
       </provider>
     </entry>

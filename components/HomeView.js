@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
+import '../assets/fonts'
 
 export default class HomeView extends Component{
   render(){
@@ -24,4 +25,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
+  title: {
+    fontFamily: 'Linotype - OptimalLTStd'
+  }
 });

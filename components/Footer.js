@@ -6,9 +6,9 @@ export default class Footer extends Component{
     render(){
         return(
         <View style={styles.container}>
-            <Image source={require('../assets/Profile_icon.png')}/>
+            <Image source={require('../assets/images/Profile_icon.png')}/>
             <FooterTextBox/>
-            <Image source={require('../assets/Vibes_icon.png')}/>
+            <Image source={require('../assets/images/Vibes_icon.png')}/>
         </View>
         )
     }
