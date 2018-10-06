@@ -8,8 +8,10 @@ export default class MainContentContainer extends Component{
     render(){
         return(
             <View style={styles.container}>
-              <Swiper horizontal={false}>
+              <Swiper horizontal={false} loop={false}>
                 <HomeView/>
+                <BasicInfoView/>
+                <BasicInfoView/>
                 <BasicInfoView/>
               </Swiper>
             </View>
