@@ -16,7 +16,7 @@ export default class Footer extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        height: 100,
+        height: 75,
         flexDirection: 'row',
         borderTopWidth: 1,
         borderTopColor: '#dddad6'
