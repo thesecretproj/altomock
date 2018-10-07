@@ -7,7 +7,11 @@ export default class SingleScreen extends Component{
         return(
             <View style={styles.container}>
                 <MainContentContainer/>
-                <Button style={styles.button} title={"Cancel Ride"} onPress={() => console.log("button pressed")}/>
+                <View style={styles.buttonContainer}>
+                  <View style={styles.button} >
+                    <Text style={styles.buttonText}>CANCEL TRIP</Text>
+                  </View>
+                </View>
             </View>
         )
     }
@@ -15,9 +19,25 @@ export default class SingleScreen extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+      flex: 1
+    },
+    buttonContainer: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 75
     },
     button: {
-        height: 75
-    }
+      height:45,
+      width: 300,
+      borderWidth: 1,
+      borderColor: '#dddad6',
+      justifyContent: 'center',
+      alignItems: 'center'
+
+    },
+  buttonText: {
+    fontFamily: 'optima',
+    color: '#dddad6',
+    textAlign: 'center'
+  }
 });

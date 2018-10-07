@@ -2,15 +2,30 @@ import React from 'react'
 import { Platform, StyleSheet, Text, View } from 'react-native'
 import Footer from './components/Footer'
 import SingleScreen from "./components/SingleScreen";
+import {Font} from "expo";
 export default class App extends React.Component {
+  state = {
+    fontLoaded: false,
+  }
   render() {
-    return (
-      <View style={styles.container}>
-        <StatusBarBackground/>
-        <SingleScreen/>
-        <Footer/>
-      </View>
-    );
+    if(this.state.fontLoaded) {
+      return (
+        <View style={styles.container}>
+          <StatusBarBackground/>
+          <SingleScreen/>
+          <Footer/>
+        </View>
+      )
+    } else return (<Text>Loading...</Text>)
+
+  }
+  async componentDidMount() {
+    await Font.loadAsync({
+      'optima': require('./assets/fonts/Linotype-OptimaLTStd.otf'),
+      'grotesk': require('./assets/fonts/PxGrotesk-Regular.otf')
+    })
+
+    this.setState({ fontLoaded: true });
   }
 }
 
@@ -26,9 +41,9 @@ class StatusBarBackground extends React.Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F7F3EF',
+    backgroundColor: '#F7F3EF'
   },
     statusBarBackground: {
-        height: (Platform.OS === 'ios') ? 18 : 0
+        height: (Platform.OS === 'ios') ? 18 : 24
     }
 });

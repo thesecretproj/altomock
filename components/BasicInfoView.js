@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import {Text, View, Image, StyleSheet} from 'react-native';
+import {Text, View, Image, StyleSheet, Dimensions} from 'react-native';
 
 export default class BasicInfoView extends Component{
   render(){
     return(
       <View style={styles.container}>
-        <Text>Basic Info View</Text>
+        <Image style={styles.stretch} source={this.props.imageSrc}/>
       </View>
     )
   }
@@ -15,4 +15,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1
   },
+  stretch: {
+    width: Dimensions.get('window').width,
+    height: 300,
+    resizeMode: 'center'
+  },
+  blurry: {
+    //blurRadius: 20
+  }
 });

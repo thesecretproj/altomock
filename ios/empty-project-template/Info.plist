@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>empty-project-template</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Linotype - OptimaLTStd-Black.otf</string>
+		<string>Linotype - OptimaLTStd-BlackItalic.otf</string>
+		<string>Linotype - OptimaLTStd-Bold.otf</string>
+		<string>Linotype - OptimaLTStd-BoldItalic.otf</string>
+		<string>Linotype - OptimaLTStd-DemiBold.otf</string>
+		<string>Linotype - OptimaLTStd-DemiBoldItalic.otf</string>
+		<string>Linotype - OptimaLTStd-ExtraBlack.otf</string>
+		<string>Linotype - OptimaLTStd-Italic.otf</string>
+		<string>Linotype - OptimaLTStd-Medium.otf</string>
+		<string>Linotype - OptimaLTStd-MediumItalic.otf</string>
+		<string>Linotype - OptimaLTStd-XBlackItalic.otf</string>
+		<string>Linotype - OptimaLTStd.otf</string>
+		<string>PxGrotesk-Bold.otf</string>
+		<string>PxGrotesk-BoldIta.otf</string>
+		<string>PxGrotesk-Light.otf</string>
+		<string>PxGrotesk-LightIta.otf</string>
+		<string>PxGrotesk-Regular.otf</string>
+		<string>PxGrotesk-RegularIta.otf</string>
+		<string>PxGrotesk-Screen.otf</string>
+	</array>
+</dict>
+</plist>

@@ -5,18 +5,21 @@ import Swiper from 'react-native-swiper'
 import BasicInfoView from "./BasicInfoView";
 
 export default class MainContentContainer extends Component{
-    render(){
-        return(
-            <View style={styles.container}>
-              <Swiper horizontal={false} loop={false}>
-                <HomeView/>
-                <BasicInfoView/>
-                <BasicInfoView/>
-                <BasicInfoView/>
-              </Swiper>
-            </View>
-        )
-    }
+  render(){
+    let driverPhoto = require('../assets/images/Driver_photo.png')
+    let vehiclePhoto = require('../assets/images/Vehicle_photo.png')
+    let mapPhoto = require('../assets/images/Map_detail.png')
+    return(
+      <View style={styles.container}>
+        <Swiper horizontal={false} loop={false}>
+          <HomeView/>
+          <BasicInfoView imageSrc={driverPhoto}/>
+          <BasicInfoView imageSrc={vehiclePhoto}/>
+          <BasicInfoView imageSrc={mapPhoto}/>
+        </Swiper>
+      </View>
+    )
+  }
 }
 
 const styles = StyleSheet.create({

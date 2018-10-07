@@ -5,8 +5,8 @@ export default class FooterTextBox extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <Text>ATL Int'l Airport</Text>
-                <Text>ETA: 5:40 PM</Text>
+              <Text style={styles.footerText}>ATL Int'l Airport</Text>
+              <Text style={styles.footerText}>ETA: 5:40 PM</Text>
             </View>
         )
     }
@@ -14,6 +14,10 @@ export default class FooterTextBox extends Component{
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+      flex: 1,
+      flexDirection: 'column'
     },
+    footerText: {
+      textAlign: 'center'
+    }
 });
