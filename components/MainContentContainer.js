@@ -13,7 +13,13 @@ export default class MainContentContainer extends Component{
       <View style={styles.container}>
         <Swiper horizontal={false} loop={false}>
           <HomeView/>
-          <BasicInfoView imageSrc={driverPhoto}/>
+          <BasicInfoView
+            imageSrc={driverPhoto}
+            text={"YOUR DRIVER"}
+            time={"Steph"}
+            ampm={""}
+            driverInfo={"Steph Festiculma is a graduate of Parsons New School in New York and fluent in Portuguese, Spanish, and English. Steph has been driving with Alto since 2018."}
+          />
           <BasicInfoView imageSrc={vehiclePhoto}/>
           <BasicInfoView imageSrc={mapPhoto}/>
         </Swiper>
