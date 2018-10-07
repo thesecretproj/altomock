@@ -8,7 +8,7 @@ export default class MainContentContainer extends Component{
   render(){
     let driverPhoto = require('../assets/images/Driver_photo.png')
     let vehiclePhoto = require('../assets/images/Vehicle_photo.png')
-    let mapPhoto = require('../assets/images/Map_detail.png')
+    let mapPhoto = require('../assets/images/Map_overview.png')
     return(
       <View style={styles.container}>
         <Swiper horizontal={false} loop={false}>

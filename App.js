@@ -44,6 +44,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F7F3EF'
   },
     statusBarBackground: {
-        height: (Platform.OS === 'ios') ? 18 : 24
+        //height: (Platform.OS === 'ios') ? 18 : 24
     }
 });

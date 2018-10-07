@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
   },
   stretch: {
     width: Dimensions.get('window').width,
-    height: 300,
-    resizeMode: 'center'
+    height: 275,
+    resizeMode: 'cover'
   },
   blurry: {
     //blurRadius: 20
