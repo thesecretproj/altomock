@@ -15,6 +15,8 @@ export default class GoldText extends Component{
 const styles = StyleSheet.create({
   text: {
     fontFamily: 'grotesk',
-    color: '#ac826d'
+    color: '#ac826d',
+    marginTop: 30,
+    marginBottom: 20
   }
 });

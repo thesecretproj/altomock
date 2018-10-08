@@ -16,7 +16,8 @@ const styles = StyleSheet.create({
   container: {
     fontFamily: 'optima',
     fontSize: 36,
-    paddingTop: 40,
-    paddingBottom: 40
+    paddingTop: 80,
+    paddingBottom: 20
   }
 });
+

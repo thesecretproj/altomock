@@ -27,17 +27,19 @@ const styles = StyleSheet.create({
       height: 75
     },
     button: {
-      height:45,
-      width: 300,
+      height:40,
+      width: 330,
       borderWidth: 1,
       borderColor: '#dddad6',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
 
     },
   buttonText: {
-    fontFamily: 'optima',
+    fontFamily: 'grotesk-bold',
     color: '#dddad6',
+    letterSpacing: 2,
+    paddingTop: 5,
     textAlign: 'center'
   }
 });

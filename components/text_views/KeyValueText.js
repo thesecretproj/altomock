@@ -6,9 +6,9 @@ export default class KeyValueText extends Component{
   render(){
     return(
       <View style={styles.container}>
-        <Text>{this.props.text}</Text>
-        <View style={{flexDirection: 'row'}}>
-          <Text>{this.props.value}</Text>
+        <Text style={styles.keyText}>{this.props.text}</Text>
+        <View style={styles.value}>
+          <Text style={{fontFamily:'grotesk-bold'}}>{this.props.value}</Text>
           {this.props.info ? <Image source={require('../../assets/images/Info_icon.png')}/> : null}
         </View>
       </View>
@@ -24,10 +24,13 @@ const styles = StyleSheet.create({
     flex: 1,
     marginEnd: 25
   },
-  key: {
-
+  keyText: {
+    marginTop:10,
+    fontFamily: 'grotesk-light',
+    fontSize: 12
   },
   value: {
-    fontWeight: 'bold'
+    flexDirection: 'row',
+    alignItems: 'center'
   }
 });

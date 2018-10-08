@@ -29,11 +29,12 @@ var styles = StyleSheet.create({
     alignItems: 'flex-end'
   },
   time:{
-    fontFamily: 'grotesk',
+    fontFamily: 'grotesk-light',
     fontSize: 72
   },
   ampm:{
-    fontSize: 24
+    fontSize: 24,
+    fontFamily: 'grotesk'
   }
 
 });

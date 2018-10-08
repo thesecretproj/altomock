@@ -5,10 +5,13 @@ import FooterTextBox from './FooterTextBox'
 export default class Footer extends Component{
     render(){
         return(
-        <View style={styles.container}>
-            <Image source={require('../assets/images/Profile_icon.png')}/>
-            <FooterTextBox/>
-            <Image source={require('../assets/images/Vibes_icon.png')}/>
+        <View>
+            <View style={styles.borderLineFull}/>
+            <View style={styles.container}>
+                <Image source={require('../assets/images/Profile_icon.png')}/>
+                <FooterTextBox/>
+                <Image source={require('../assets/images/Vibes_icon.png')}/>
+            </View>
         </View>
         )
     }
@@ -16,13 +19,17 @@ export default class Footer extends Component{
 
 const styles = StyleSheet.create({
     container: {
-      height: 50,
-      flexDirection: 'row',
-      borderTopWidth: 1,
-      borderTopColor: '#dddad6',
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginStart: 10,
-      marginEnd: 10
+        height: 50,
+        marginStart: 20,
+        marginEnd: 20,
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+
+
     },
+    borderLineFull: {
+        borderTopWidth: 1,
+        borderTopColor: '#dddad6',
+    }
 });

@@ -14,6 +14,6 @@ export default class BasicText extends Component{
 
 const styles = StyleSheet.create({
   container: {
-    fontFamily: 'optima'
+    fontFamily: 'grotesk'
   }
 });
