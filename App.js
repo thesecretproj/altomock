@@ -1,8 +1,8 @@
 import React from 'react'
-import { Platform, StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image } from 'react-native'
 import Footer from './components/Footer'
-import SingleScreen from "./components/SingleScreen";
 import {Font} from "expo";
+import MainContentContainer from "./components/MainContentContainer";
 export default class App extends React.Component {
   state = {
     fontLoaded: false,
@@ -13,7 +13,7 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <Image style={styles.logo} source={require('./assets/images/Alto_logo.png')}/>
           <StatusBarBackground/>
-          <SingleScreen/>
+          <MainContentContainer/>
           <Footer/>
         </View>
       )
@@ -45,7 +45,7 @@ class StatusBarBackground extends React.Component{
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F7F3EF'
+    backgroundColor: '#f7f3ef'
   },
     statusBarBackground: {
         //height: (Platform.OS === 'ios') ? 18 : 24

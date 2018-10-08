@@ -13,7 +13,11 @@ export default class BasicInfoView extends Component{
         <View style={styles.text}>
           <GoldText text={this.props.text}/>
           <ClockText time={this.props.time} ampm={this.props.ampm}/>
-          {this.props.driverInfo ? <BasicText text={this.props.driverInfo}/> : null}
+            {this.props.driverInfo ?
+                <View>
+                    <View style={styles.borderMedium}/>
+                    <Text style={{fontFamily:'grotesk-light'}}>{this.props.driverInfo}</Text>
+                </View> : null}
           {this.props.make ?
               <View style={[{flexDirection: 'row'}]}>
                 <KeyValueText text={"Make / Model"} value={this.props.make}/>
@@ -25,6 +29,7 @@ export default class BasicInfoView extends Component{
                   <View style={[{flexDirection: 'row'}, {marginTop:20}]}>
                     <KeyValueText text={"Current Vibe"} value={this.props.music}/>
                   </View>
+                  <Image style={styles.mapIcon} source={require('../assets/images/Map_icon.png')}/>
                 </View> : null}
         </View>
       </View>
@@ -45,7 +50,20 @@ const styles = StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 30
   },
+  borderMedium: {
+	borderTopWidth: 1,
+    borderTopColor: '#dddad6',
+	width: 170,
+	//marginTop: 15,
+	marginBottom:10
+  },
   blurry: {
     //blurRadius: 20
+  },
+  mapIcon: {
+    position: 'absolute',
+	top: -165,
+	right: 0
   }
+
 });
