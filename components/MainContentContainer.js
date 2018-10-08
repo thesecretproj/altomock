@@ -94,7 +94,8 @@ const styles = StyleSheet.create({
 	buttonContainer: {
 		justifyContent: 'flex-start',
 		alignItems: 'center',
-		height: 55
+		height: 55,
+		marginBottom:10
 	},
 	buttonDefault: {
 		height:40,

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
-import { Font } from 'expo';
 import BasicText from "./text_views/BasicText";
 import HeaderText from "./text_views/HeaderText";
 import ClockText from "./text_views/ClockText"
@@ -13,7 +12,7 @@ export default class HomeView extends Component{
       <View style={styles.container}>
         <HeaderText text={"Your Trip"} />
         <ClockText time={"5:39"} ampm={"PM"}/>
-          <BasicText text={"Estimated at DFW Int'l Airport - Terminal E"}/>
+        <BasicText text={"Estimated at DFW Int'l Airport - Terminal E"}/>
         <View style={[{flexDirection: 'row'},{marginTop: 20}]}>
           <KeyValueText text={"Estimated Fare:"} value={"$65 - $75 "} info={true}/>
           <KeyValueText text={"Passengers:"} value={"1 - 5"} info={false}/>

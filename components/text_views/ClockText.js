@@ -26,7 +26,8 @@ export default class HeaderText extends Component{
 var styles = StyleSheet.create({
   container:{
     flexDirection:'row',
-    alignItems: 'flex-end'
+    alignItems: 'flex-end',
+
   },
   time:{
     fontFamily: 'grotesk-light',

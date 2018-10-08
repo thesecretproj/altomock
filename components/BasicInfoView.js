@@ -1,15 +1,18 @@
-import React, { Component } from 'react';
-import {Text, View, Image, StyleSheet, Dimensions} from 'react-native';
-import GoldText from "./text_views/GoldText";
+import React, { Component } from 'react'
+import {Text, View, Image, StyleSheet, Dimensions} from 'react-native'
+import GoldText from "./text_views/GoldText"
 import ClockText from "./text_views/ClockText"
 import BasicText from "./text_views/BasicText"
 import KeyValueText from "./text_views/KeyValueText"
+import LinearGradient from 'expo'
 
 export default class BasicInfoView extends Component{
   render(){
     return(
       <View style={styles.container}>
-        <Image style={styles.stretch} source={this.props.imageSrc}/>
+        <View>
+            <Image style={styles.stretch} source={this.props.imageSrc} />
+        </View>
         <View style={styles.text}>
           <GoldText text={this.props.text}/>
           <ClockText time={this.props.time} ampm={this.props.ampm}/>
