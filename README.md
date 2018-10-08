@@ -1,6 +1,6 @@
 # Alto Mock app
 
-This is the mock app for the first part of my application process. I implemented it using React Native. You can run it by following these steps:
+This is the mock app for the first part of my application process. I implemented it using React Native. You can run it by following these steps (You will need node.js/npm installed if you don't have it already):
 
 1. navigate to the root of the project in terminal
 2. if you don't have expo, install it: 'npm install -g expo-cli'
