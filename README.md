@@ -1,6 +1,6 @@
 # Alto Mock app
 
-This is the mock app for the first part of my application process. I implemented it using React Native. Tested on iPhone 6S and Galaxy S6 (symmetry); should work fine on other screens. You can run it by following these steps (You will need node.js/npm installed if you don't have it already):
+This is the mock app for the first part of my application process. I implemented it using React Native. Tested on Galaxy S6 and iPhone 6S (symmetry); should work fine on other screens. You can run it by following these steps (You will need node.js/npm installed if you don't have it already):
 
 1. navigate to the root of the project in terminal
 2. if you don't have expo, install it: 'npm install -g expo-cli'
