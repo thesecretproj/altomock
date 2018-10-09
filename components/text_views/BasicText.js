@@ -13,7 +13,7 @@ export default class BasicText extends Component{
 }
 
 const styles = StyleSheet.create({
-  container: {
-    fontFamily: 'grotesk'
+  textFormat: {
+    fontFamily: 'grotesk',
   }
 });

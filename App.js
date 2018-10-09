@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { Platform, StyleSheet, Text, View, Image } from 'react-native'
 import Footer from './components/Footer'
 import {Font} from "expo";
 import MainContentContainer from "./components/MainContentContainer";
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f3ef'
   },
     statusBarBackground: {
-        //height: (Platform.OS === 'ios') ? 18 : 24
+        height: (Platform.OS === 'ios') ? 0 : 12
     },
     logo: {
       position: 'absolute',

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Text, View, Image, StyleSheet, Dimensions} from 'react-native'
+import {Text, View, Image, StyleSheet, Dimensions, Platform} from 'react-native'
 import GoldText from "./text_views/GoldText"
 import ClockText from "./text_views/ClockText"
 import BasicText from "./text_views/BasicText"
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 	borderTopWidth: 1,
     borderTopColor: '#dddad6',
 	width: 170,
-	//marginTop: 15,
+	marginTop: (Platform.OS === 'ios') ? 0 : 10,
 	marginBottom:10
   },
   blurry: {

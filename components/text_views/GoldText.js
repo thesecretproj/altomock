@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
     fontFamily: 'grotesk',
     color: '#ac826d',
     marginTop: 30,
-    marginBottom: 20
+    marginBottom: 0
   }
 });

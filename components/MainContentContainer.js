@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Text, View, Image, StyleSheet} from 'react-native';
+import {Platform, Text, View, Image, StyleSheet} from 'react-native';
 import HomeView from "./HomeView";
 import Swiper from 'react-native-swiper'
 import BasicInfoView from "./BasicInfoView";
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
 		fontFamily: 'grotesk-bold',
 		color: '#dddad6',
 		letterSpacing: 2,
-		paddingTop: 5,
+		paddingTop: (Platform.OS === 'ios') ? 5 : 0,
 		textAlign: 'center'
 	}
 });
