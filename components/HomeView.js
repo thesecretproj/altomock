@@ -14,7 +14,7 @@ export default class HomeView extends Component{
         <ClockText style={{flex:1}} time={this.props.arrival.time} ampm={this.props.arrival.ampm}/>
         <BasicText style={{flex:1}} text={this.props.arrival.arrival}/>
         <View style={[{flexDirection: 'row'},{marginTop: 20}, {flex:1}]}>
-          <KeyValueText text={"Estimated Fare:"} value={this.props.dest.fare} info={true}/>
+          <KeyValueText text={"Estimated Fare:"} value={this.props.dest.fare+"  "} info={true}/>
           <KeyValueText text={"Passengers:"} value={this.props.dest.passengers} info={false}/>
           <KeyValueText text={"Payment:"} value={this.props.dest.payment} info={false}/>
         </View>
@@ -30,7 +30,7 @@ export default class HomeView extends Component{
               <Text style={{fontFamily:'grotesk-bold'}}>{this.props.dest.destination3}</Text>
           </View>
           <View style={[{marginTop:(Platform.OS === 'ios') ? 0 : 20},{flexDirection: 'row'},{flex:1},{justifyContent:'space-between'}]}>
-			<Text>{this.props.dest.request}<Image
+			<Text>{this.props.dest.request+"  "}<Image
 				style={Platform.OS === 'android' ? {height:40,width:40} : null}
 				source={require('../assets/images/Edit_icon.png')}/>
 			</Text>

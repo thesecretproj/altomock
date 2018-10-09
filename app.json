@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "alto",
-    "description": "This project is really great.",
+    "description": "Dallas's Premiere Ride Service",
+    "icon": "./assets/images/Vibes_icon.png",
     "slug": "alto",
     "privacy": "public",
     "sdkVersion": "30.0.0",
@@ -9,6 +10,9 @@
       "ios",
       "android"
     ],
+    "android": {
+      "package": "com.alto.alto"
+    },
     "version": "1.0.0",
     "orientation": "portrait",
     "updates": {
