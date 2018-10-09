@@ -11,7 +11,7 @@ export default class HomeView extends Component{
     return(
       <View style={styles.container}>
         <HeaderText style={{flex:1}} text={"Your Trip"} />
-        <ClockText style={{flex:1}} time={this.props.arrival.time} ampm={"PM"}/>
+        <ClockText style={{flex:1}} time={this.props.arrival.time} ampm={this.props.arrival.ampm}/>
         <BasicText style={{flex:1}} text={this.props.arrival.arrival}/>
         <View style={[{flexDirection: 'row'},{marginTop: 20}, {flex:1}]}>
           <KeyValueText text={"Estimated Fare:"} value={this.props.dest.fare} info={true}/>
