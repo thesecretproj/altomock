@@ -31,7 +31,7 @@ export default class HomeView extends Component{
           </View>
           <View style={[{marginTop:(Platform.OS === 'ios') ? 0 : 20},{flexDirection: 'row'},{flex:1},{justifyContent:'space-between'}]}>
 			<Text>Can you drop me off at AA International bag drop please?   <Image
-
+				style={{height:40,width:40}}
 				source={require('../assets/images/Edit_icon.png')}/>
 			</Text>
           </View>
