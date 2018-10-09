@@ -4,16 +4,21 @@ import HomeView from "./HomeView";
 import Swiper from 'react-native-swiper'
 import BasicInfoView from "./BasicInfoView";
 
+
 const CANCEL_TRIP = 'CANCEL TRIP'
 const CONTACT_DRIVER = 'CONTACT DRIVER'
 const IDENTIFY_VEHICLE = 'IDENTIFY VEHICLE'
 const CHANGE_VEHICLE_VIBE = 'CHANGE VEHICLE VIBE'
+const YOUR_DRIVER = 'YOUR DRIVER'
+const YOUR_VEHICLE = 'YOUR VEHICLE'
+const YOUR_TRIP = 'YOUR TRIP'
+const ERROR = "ERROR"
+
 export default class MainContentContainer extends Component{
 	constructor(props){
 		super(props)
 		this.pageChanged = this.pageChanged.bind(this)
-		this.state={buttonString: CANCEL_TRIP}
-		this.state={buttonStyle: styles.buttonDefault}
+		this.state={buttonString: CANCEL_TRIP,buttonStyle: styles.buttonDefault}
 	}
   render(){
     let driverPhoto = require('../assets/images/Driver_photo.png')
@@ -28,37 +33,38 @@ export default class MainContentContainer extends Component{
 			dotColor={'#d9d8cb'}
 			paginationStyle={styles.paginationStyle}
 			onIndexChanged={this.pageChanged}>
-          <HomeView/>
+          <HomeView
+			  arrival={this.props.userData.arrivalInfo}
+			  dest={this.props.userData.destinationInfo}
+		  />
           <BasicInfoView
             imageSrc={driverPhoto}
-            text={"YOUR DRIVER"}
-            time={"Steph"}
-            ampm={""}
-            driverInfo={"Steph Festiculma is a graduate of Parsons New School in New York and fluent in Portuguese, Spanish, and English. Steph has been driving with Alto since 2018."}
+            text={YOUR_DRIVER}
+            time={this.props.userData.driver}
+            driverInfo={this.props.userData.driverInfo}
           />
           <BasicInfoView
               imageSrc={vehiclePhoto}
-              text={"YOUR VEHICLE"}
-              time={"Alto 09"}
-              ampm={""}
-              make={"2019 Volkswagen Atlas"}
-              color={"Pure White"}
+              text={YOUR_VEHICLE}
+              time={this.props.userData.vehicle}
+              make={this.props.userData.model}
+              color={this.props.userData.color}
           />
           <BasicInfoView
               imageSrc={mapPhoto}
-              text={"YOUR TRIP"}
-              time={"5:39"}
-              ampm={"PM"}
-              arrival={"Estimated Arrival at DFW Int'l Airport - Terminal E"}
-              music={"Vaporwave Beats"}
+              text={YOUR_TRIP}
+              time={this.props.userData.arrivalInfo.time}
+              ampm={this.props.userData.arrivalInfo.ampm}
+              arrival={this.props.userData.arrivalInfo.arrival}
+              music={this.props.userData.music}
           />
         </Swiper>
-		  <View style={styles.buttonContainer}>
-			  <View style={this.state.buttonStyle} >
-				  <Text style={styles.buttonText}>{this.state.buttonString ? this.state.buttonString : CANCEL_TRIP}</Text>
-			  </View>
-		  </View>
-      </View>
+		<View style={styles.buttonContainer}>
+			<View style={this.state.buttonStyle} >
+				<Text style={styles.buttonText}>{this.state.buttonString}</Text>
+			</View>
+		</View>
+	  </View>
     )
   }
 
@@ -75,7 +81,7 @@ export default class MainContentContainer extends Component{
 			case 3: buttonString = CHANGE_VEHICLE_VIBE
 					this.setState({buttonStyle:styles.buttonRed})
 				break
-			default: buttonString = "ERROR"
+			default: buttonString = ERROR
 				break
 		}
 		this.setState({buttonString:buttonString})
@@ -94,7 +100,7 @@ const styles = StyleSheet.create({
 	buttonContainer: {
 		justifyContent: 'flex-start',
 		alignItems: 'center',
-		height: 55,
+		height: 45,
 		marginBottom:10
 	},
 	buttonDefault: {

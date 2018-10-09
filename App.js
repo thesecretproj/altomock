@@ -3,9 +3,12 @@ import { Platform, StyleSheet, Text, View, Image } from 'react-native'
 import Footer from './components/Footer'
 import {Font} from "expo";
 import MainContentContainer from "./components/MainContentContainer";
+import * as data from "./data/data.json"
+
 export default class App extends React.Component {
-  state = {
-    fontLoaded: false,
+    constructor(props){
+      super(props)
+      this.state = {fontLoaded: false, userData:data}
   }
   render() {
     if(this.state.fontLoaded) {
@@ -13,11 +16,15 @@ export default class App extends React.Component {
         <View style={styles.container}>
           <Image style={styles.logo} source={require('./assets/images/Alto_logo.png')}/>
           <StatusBarBackground/>
-          <MainContentContainer/>
-          <Footer/>
+          <MainContentContainer userData={this.state.userData}/>
+          <Footer
+              dest={this.state.userData.arrivalInfo.shortenedDest}
+              time={this.state.userData.arrivalInfo.time}
+              ampm={this.state.userData.arrivalInfo.ampm}
+          />
         </View>
       )
-    } else return (<Text>Loading...</Text>)
+    } else return (<Text style={[{textAlign:'center'},{paddingTop:300}]}>Loading...</Text>)
 
   }
   async componentDidMount() {
@@ -48,7 +55,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f7f3ef'
   },
     statusBarBackground: {
-        height: (Platform.OS === 'ios') ? 0 : 12
+        height: (Platform.OS === 'ios') ? 0 : 24
     },
     logo: {
       position: 'absolute',

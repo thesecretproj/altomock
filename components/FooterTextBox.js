@@ -5,8 +5,8 @@ export default class FooterTextBox extends Component{
     render(){
         return(
             <View style={styles.container}>
-              <Text style={styles.footerTextTop}>DFW Int'l Airport</Text>
-              <Text style={styles.footerTextBottom}>ETA: 5:40 PM</Text>
+              <Text style={styles.footerTextTop}>{this.props.dest}</Text>
+              <Text style={styles.footerTextBottom}>ETA: {this.props.time} {this.props.ampm}</Text>
             </View>
         )
     }

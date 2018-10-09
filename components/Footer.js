@@ -9,7 +9,11 @@ export default class Footer extends Component{
             <View style={styles.borderLineFull}/>
             <View style={styles.container}>
                 <Image source={require('../assets/images/Profile_icon.png')}/>
-                <FooterTextBox/>
+                <FooterTextBox
+                    dest={this.props.dest}
+                    time={this.props.time}
+                    ampm={this.props.ampm}
+                />
                 <Image source={require('../assets/images/Vibes_icon.png')}/>
             </View>
         </View>
