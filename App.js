@@ -3,15 +3,15 @@ import { Platform, StyleSheet, Text, View, Image } from 'react-native'
 import Footer from './components/Footer'
 import {Font} from "expo";
 import MainContentContainer from "./components/MainContentContainer";
-import * as data from "./data/data.json"
+//import * as data from "./data/data.json"
 
 export default class App extends React.Component {
     constructor(props){
       super(props)
-      this.state = {fontLoaded: false, userData:data}
+      this.state = {fontLoaded: false, userData:false}
   }
   render() {
-    if(this.state.fontLoaded) {
+    if(this.state.fontLoaded&&this.state.userData.arrivalInfo) {
       return (
         <View style={styles.container}>
           <Image style={styles.logo} source={require('./assets/images/Alto_logo.png')}/>
@@ -35,8 +35,10 @@ export default class App extends React.Component {
       'grotesk-bold': require('./assets/fonts/PxGrotesk-Bold.otf'),
       'grotesk-light':require('./assets/fonts/PxGrotesk-Light.otf')
     })
+	let response = await fetch('http://ec2-18-222-128-186.us-east-2.compute.amazonaws.com/userData')
+	let data = await response.json()
 
-    this.setState({ fontLoaded: true });
+    this.setState({ fontLoaded: true, userData:data });
   }
 }
 
