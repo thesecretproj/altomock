@@ -9,5 +9,3 @@ This is the mock app for the first part of my application process. I implemented
 5. Download the expo client on an iPhone or Android device from the App store/Play store
 6. Scan the QR code in the Expo app (Android) or in the Camera app (iOS).
 7. The app is running!
-
-Thanks for your consideration. If you have issues email or call/text: aleclindner@gmail.com, 979-324-6808
